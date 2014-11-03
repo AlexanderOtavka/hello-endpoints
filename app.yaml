@@ -1,0 +1,20 @@
+application: lofty-entropy-730
+version: 1-0-a-1
+runtime: python27
+threadsafe: true
+api_version: 1
+
+handlers:
+# Endpoints handler
+- url: /_ah/spi/.*
+  script: api.application
+# Serve a static HTML client
+- url: /.*
+  static_files: index.html
+  upload: index.html
+
+libraries:
+- name: pycrypto
+  version: latest
+- name: endpoints
+  version: 1.0

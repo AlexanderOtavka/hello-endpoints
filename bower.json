@@ -1,0 +1,19 @@
+{
+  "name": "HelloEndpoints",
+  "version": "1.0.a.1",
+  "authors": [
+    "Alexander Otavka <zotavka@gmail.com>"
+  ],
+  "description": "Test application for Google Cloud Endpoints.",
+  "keywords": [
+    "endpoints"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components/bower",
+    "test",
+    "tests"
+  ]
+}
