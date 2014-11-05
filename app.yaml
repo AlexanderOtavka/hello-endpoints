@@ -1,4 +1,27 @@
 application: lofty-entropy-730
+# Version in the format: major-minor-releaseType-revision
+# major: incremented with major version changes
+#        major versions start counting at 1
+# minor: incremented with every release, if major is not
+#        minor versions start counting at 0
+# releaseType: must be one of `a` `b` `rc` `r`
+#           a: an Alpha release
+#           b: a Beta release
+#          rc: a release candidate
+#           r: a full release
+# revison: incremented for each new alpha, beta, or rc put up for testing
+#          releases should avoid revisions if possible
+#          revisions start counting at 1
+# 
+# Examples:
+#                Formal Name = abbreviation
+# ------------------------------------------
+#            V2.3 (Alpha 13) = 2-3-a-13
+# V1.0 (Release Candidate 3) = 1-0-rc-3
+#            V3.16 (Release) = 3-16-r
+# 
+# This is discouraged, releases should'nt have revisions:
+# V6.3.12 (Release) = 6-3-r-12
 version: 1-0-a-1
 runtime: python27
 threadsafe: true
